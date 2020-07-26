@@ -1,0 +1,415 @@
+
+/**** start main rules ****/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Coda', cursive;
+}
+ 
+.container {
+    width: 85%;
+    margin: auto;
+}
+/**** end main rules *****/
+
+/**** start navbar ***/
+
+nav {
+    height: 70px;
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    z-index: 9999;
+}
+
+nav .navbar-header{
+    float: left;    
+}
+.navbar-header .menu-btn{
+    display: none;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+nav .navbar-header a{
+    text-decoration: none;    
+    font-size: 25px;
+    line-height: 70px;
+    color: #fff;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+}
+
+nav ul li{
+    float: left;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 20px;
+    line-height: 70px;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+nav ul li a:hover{
+    color: #f19289;
+}
+
+/*Media Query*/
+/*mobile*/
+@media(max-width:768px){
+    nav ul{
+        float: none;
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: rgb(4, 17, 62);
+        border-top: 2px solid #3552b9;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: block;
+        float: none;
+    }
+
+    nav ul li:hover{
+        transform: translateY(3px);
+    }
+
+    nav ul li a{
+        padding: 20px 0px;
+    }
+
+    nav .navbar-header{
+        float: none;
+        width: 100%;
+    }
+
+    .navbar-header .menu-btn{
+        display: block !important;
+        float: right;
+    }
+}
+
+/**** End navbar ***/
+
+/***** start header ****/
+
+header {
+    width: 100%;
+    height: 667px;
+    background-image: url('../Images/space.jpg');
+    background-size: cover;
+    text-align: center;
+    padding-top: 240px;
+    color: #fff;
+}
+
+header .title h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/***** end header ****/
+
+/*** start info section ****/
+section{
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, tahoma, sans-serif;
+    line-height: 1.4;
+}
+
+section .div1 {
+    width: 33%;
+    float: left;
+    margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-right: 1px solid rgb(184, 184, 184);
+}
+
+section .div1:last-child {
+    border-right: none;
+}
+
+section .div1 h2 {
+    color: rgb(58, 83, 155);
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+section .div1 p {
+    color: rgb(156, 155, 155);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+section .div1 button {
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(58, 83, 155);
+    border-radius: 5px;
+    border: 1px solid rgb(58, 83, 155);
+    cursor: pointer;
+    color: #FFF;
+    font-weight: bold;
+}
+
+/*media query*/
+
+@media(max-width:991px){
+    section .div1 {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+        border: none;
+    }
+}
+
+/**** end info section ***/
+
+/**** start about us section ***/
+
+.sec {
+    width: 100%;
+    overflow: hidden;
+    line-height: 1.4;
+    text-align: center;
+    background-color:  rgb(58, 83, 155);
+    margin-top: 60px;    
+    padding: 80px 0px;
+}
+
+.sec h3:first-child {
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    opacity: 0.6;
+    font-weight: normal;
+
+}
+
+.sec p{
+    margin-bottom: 40px;
+    color: rgb(241, 241, 241);
+    font-weight: normal;
+    font-size: 20px;
+    opacity: 0.5;
+}
+.sec .div1 {
+    width: 22%;
+    height: 300px;
+    float: left;
+    padding-top: 35px;
+    box-shadow: 0px 0px 1px 1px #fff;
+    margin: 10px;
+    background-color: rgb(58, 83, 155);
+    border-radius: 6px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.sec .div1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.sec .div1 h3 {
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.sec .div1 span {
+    color: #DDD;
+    font-size: 15px;
+}
+
+@media(max-width:767px){
+
+    .sec .div1{
+        width: 100%;
+        padding: 40px 0px;
+        box-shadow: 0px 0px 1px 1px #fff;
+        margin: 10px;
+        background-color: rgb(58, 83, 155);
+        border-radius: 6px
+    }
+
+    .sec .div1 h3{
+        margin-top:10px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px){
+    
+    .sec .div1{
+        width: 48%;
+        float: left;
+        margin: 10px 1%;
+        background-color: rgb(58, 83, 155);
+        border-radius: 6px
+    }
+
+    .sec .div1 h3{
+        margin-top:10px;
+    }
+}
+
+
+/*medium screen*/
+@media(min-width:992px) and (max-width:1199px){
+
+    .sec .div1{
+        width: 32%;
+        float: left;
+        margin: 10px 0.66667%;
+        background-color: rgb(58, 83, 155);
+        border-radius: 6px
+    }
+
+    .sec .div1 h3{
+        margin-top:10px;
+    }
+}
+
+/*** end about us section ***/
+
+/*** start our works ***/
+
+section {
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+section h3:first-child {
+    font-size: 40px;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+section .div {
+    width: 50%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+section .div img {
+    width: 100%;
+}
+
+section .div h3 {
+    color: rgb(96, 129, 226);
+    margin-bottom: 10px;
+    margin-top: 40px;
+    font-size: 30px;
+
+}
+
+section .div p {
+    color: rgb(192, 190, 190);
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+section .div button {
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(58, 83, 155);
+    border-radius: 5px;
+    border: 1px solid rgb(58, 83, 155);
+    cursor: pointer;
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+@media(max-width:767px){
+    section .div{
+        width: 100%;
+        float: none;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: left;
+        margin: 10px 0px;
+    }
+
+    section .div h3{
+        margin-top:0px;
+    }
+}
+
+/*** end our works ****/
+ 
+/*Start Footer*/
+footer{
+    width: 100%;
+    height: 70px;
+    color: rgb(58, 83, 155);
+    line-height: 70px;
+}
+
+footer p{
+    float: left;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+footer .social-icons{
+    float: right;
+}
+
+footer .social-icons .fa{
+    opacity: 0.7;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+footer .social-icons .fa:hover{
+    opacity: 1;
+}
+
+/*Media Query*/
+
+@media(max-width:767px){
+    footer{
+        padding-top: 10px;
+    }
+
+    footer p,footer .social-icons{
+        float: none;
+        line-height: 3em;
+    }
+    footer .social-icons {
+        text-align: right;
+    }
+}
+
+/*End Footer*/
